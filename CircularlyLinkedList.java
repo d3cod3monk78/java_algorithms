@@ -89,4 +89,10 @@ class CircularlyLinkedList<E> {
 			return value;
 		}
 	}
+
+	public void rotate() {
+		if(this.size != 0){
+			this.tail = this.tail.getNext();
+		}
+	}
 }
